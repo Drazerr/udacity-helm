@@ -10,7 +10,7 @@ image:
 
 service:
   port:8111
-  type: ClusterIP
+  type:ClusterIP
 
 resources:
   requests:
