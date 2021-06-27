@@ -25,5 +25,7 @@ spec:
     spec:
       containers:
       - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
         name: nginx-alpine
+	resourses: 
+{{ toYaml .Values.resourses | indent 12 }}
