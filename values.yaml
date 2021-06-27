@@ -1,5 +1,5 @@
-namespace 
-  name:demo
+namespace:
+  name: demo
 
 replicaCount: 3
 
